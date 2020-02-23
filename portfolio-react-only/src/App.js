@@ -7,9 +7,23 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="App">
-      <div>Hello</div>
-    </div>
+    <Router>
+      <div>
+        <Nav />
+        <Switch>
+          <Route exact path={"/"}>
+            <Bio />
+          </Route>
+          <Route exact path={"/portfolio"}>
+            <Portfolio />
+          </Route>
+          <Route exact path={"/contact"}>
+            <Contact />
+          </Route>
+
+        </Switch>
+      </div>
+    </Router >
   );
 }
 

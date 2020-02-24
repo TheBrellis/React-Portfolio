@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Bio from "./pages/Bio";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Nav from "./components/Nav";
+import Header from "./components/Header";
 
 function App() {
   return (
     <Router>
       <div>
-        <Nav />
+        <Header />
         <Switch>
           <Route exact path={"/"}>
             <Bio />
